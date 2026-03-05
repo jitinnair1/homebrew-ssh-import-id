@@ -14,6 +14,6 @@ jobs:
         uses: mislav/bump-homebrew-formula-action@v3
         with:
           formula-name: ssh-import-id
-          homebrew-tap: jitinnair1/homebrew-ssh-import-id
+          homebrew-tap: jitinnair1/ssh-import-id
         env:
           COMMITTER_TOKEN: ${{ secrets.COMMITTER_TOKEN }}
