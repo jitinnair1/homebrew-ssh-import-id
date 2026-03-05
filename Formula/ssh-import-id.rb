@@ -7,7 +7,7 @@ class SshImportId < Formula
   sha256 "d44bfb6d313abc865643d8b3aa9e6999c1a430a93eebe97f30a41773af15d2d1"
   license "GPL-3.0-or-later"
 
-  depends_on "python@3"
+  depends_on "python@3.14"
 
   resource "distro" do
     url "https://files.pythonhosted.org/packages/fc/f8/98eea607f65de6527f8a2e8885fc8015d3e6f5775df186e443e0964a11c3/distro-1.9.0.tar.gz"
@@ -15,6 +15,7 @@ class SshImportId < Formula
   end
 
   def install
+    virtualenv_create(libexec, "python3.14")
     virtualenv_install_with_resources
   end
 
