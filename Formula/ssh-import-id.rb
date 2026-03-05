@@ -15,7 +15,7 @@ class SshImportId < Formula
   end
 
   def install
-    virtualenv_create(libexec, "python3.11")
+    virtualenv_create(libexec, "python3.14")
     virtualenv_install_with_resources
   end
 
