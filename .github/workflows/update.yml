@@ -11,8 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Bump Formula
-        uses: mislav/bump-homebrew-formula-action@latest
+        uses: mislav/bump-homebrew-formula-action@v3
         with:
           formula-name: ssh-import-id
         env:
-          COMMITTER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMITTER_TOKEN: ${{ secrets.COMMITTER_TOKEN }}
