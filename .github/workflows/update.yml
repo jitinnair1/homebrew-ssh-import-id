@@ -1,0 +1,18 @@
+name: Bump Formula
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'
+      workflow_dispatch:
+
+jobs:
+  bump:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bump Formula
+        uses: mislav/bump-homebrew-formula-action@v3
+        with:
+          formula-name: ssh-import-id
+        env:
+          COMMITTER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
