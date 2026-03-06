@@ -1,6 +1,25 @@
-This is a homebrew tap of [`ssh-import-id`](https://github.com/dustinkirkland/ssh-import-id) which you can install via `homebrew` as:
+This is a homebrew tap of [`ssh-import-id`](https://github.com/dustinkirkland/ssh-import-id).
 
+### Install
 
+Add the tap:
 ```bash
-brew install jitinnair1/homebrew-ssh-import-id/ssh-import-id
+brew tap jitinnair1/ssh-import-id
+```
+
+Install the package:
+```bash
+brew install ssh-import-id
+```
+
+### Remove and clean up
+
+1. Uninstall the package:
+```bash
+brew uninstall ssh-import-id
+```
+
+2. Remove the tap:
+```bash
+brew untap jitinnair1/ssh-import-id
 ```
